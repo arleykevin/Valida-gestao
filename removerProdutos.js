@@ -12,6 +12,7 @@ function removerProduto(id) {
         .then(() => {
             console.log("Produto excluído com sucesso.");
             exibirProdutos(); // Atualiza a lista de produtos
+            verificarValidade();
         })
         .catch((error) => {
             console.error("Erro ao excluir o produto: ", error);
