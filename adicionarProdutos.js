@@ -25,6 +25,7 @@ function adicionarProduto() {
                 document.getElementById("produtoValidade").value = "";
                 document.getElementById("produtoQuantidade").value = "";
                 document.getElementById("produtoLoja").value = ""; // Limpa a seleção da loja
+                verificarValidade(); // Verifica validade após adicionar o produto
             })
             .catch((error) => {
                 console.error("Erro ao salvar o produto: ", error);
