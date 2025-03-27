@@ -37,8 +37,9 @@ function editarProduto(id) {
                     exibirProdutos(); // Atualiza a lista de produtos
                     modal.style.display = "none"; // Fecha o modal após salvar
                     // Chama a função para verificar validade após criar o produto
-        verificarValidade();
+        
                 });
+                verificarValidade();
             };
 
             // Fecha o modal quando o usuário clica no "x"
