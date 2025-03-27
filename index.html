@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/3.3.0/parse.min.js"></script>
+    <script>
+        Parse.initialize("s3s6e8oktukIxuTSkwlOENCsIoxMAZWgUqRuqJpY", "CwuI6IwiKEBiEboX6QkQy1tFFf52IjXONLUlNuNg"); // Substitua pelos seus valores
+        Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h2>Gestor de Validade de Produtos</h2>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" required>
+    </br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" required>
+    </br>
+        <button id="loginButton" >Entrar</button>
+        <p id="error-message"></p>
+        <button id="registerButton">Cadastrar</button>
+    </div>
+    <script src="efetuarLogin.js"></script>
+
+</body>
+</html>

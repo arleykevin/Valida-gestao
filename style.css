@@ -1,0 +1,116 @@
+body {
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+}
+h2 {
+    color: #007bff;
+}
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 25%;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+td {
+    background-color: #f9f9f9;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.vencido {
+    background-color: rgb(184, 42, 42); /* Cor de fundo vermelha para produtos vencidos */
+    color: rgb(194, 28, 28); /* Cor do texto branca para melhor contraste */
+}
+
+#clearFilters {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#validadeMensagens {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #f8d7da; /* Cor de fundo leve para mensagens de alerta */
+    color: #721c24; /* Cor do texto */
+}
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgb(0,0,0); /* Cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* Fundo com opacidade */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Margem superior e centraliza */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

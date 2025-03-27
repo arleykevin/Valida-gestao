@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Validade de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script> 
+    <script>
+        // CONEXÃO COM O BANCO DE DADOS
+        Parse.initialize("s3s6e8oktukIxuTSkwlOENCsIoxMAZWgUqRuqJpY", "CwuI6IwiKEBiEboX6QkQy1tFFf52IjXONLUlNuNg"); // Substitua pelos seus valores
+        Parse.serverURL = "https://parseapi.back4app.com/";
+        const Produto = Parse.Object.extend("Produto");
+        const query = new Parse.Query(Produto);
+    </script>
+</head>
+<body>
+    <!-- Botão de Sair -->
+    <button id="logoutButton" style="display: none;" onclick="logoutUser()">Sair</button>
+
+    <h2>Gestor de Validade de Produtos</h2>
+
+    <div id="validadeMensagens" style="color: red;"></div>
+    <input type="text" id="produtoCodigo" placeholder="Código do Produto">
+    <input type="text" id="produtoNome" placeholder="Nome do Produto">
+    <input type="date" id="produtoValidade">
+    <input type="number" id="produtoQuantidade" placeholder="Quantidade">
+
+
+
+    <!-- Dropdown para selecionar a loja -->
+    <select id="produtoLoja">
+        <option value="" disabled selected>Selecione a Loja</option>
+        <option value="Loja 01">Loja 01</option>
+        <option value="Loja 02">Loja 02</option>
+        <option value="Loja 03">Loja 03</option>
+    </select>
+
+    <button onclick="adicionarProduto()">Adicionar</button>
+    <input type="text" id="searchInput" placeholder="Buscar produtos...">
+    <input type="date" id="filterDate" placeholder="Filtrar por validade...">
+    <button id="clearFilters">Limpar Filtros</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Validade</th>
+                <th>Quantidade</th>
+                <th>Loja</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaProdutos"></tbody>
+    </table>
+    <div id="noMatch" style="display:none;">Nenhum produto correspondente encontrado!</div>
+
+
+    <script src="adicionarProdutos.js"></script>
+    <script src="exibirProdutos.js"></script>
+    <script src="removerProdutos.js"></script>
+    <script src="atualizarProduto.js"></script>
+    <script src="salvarProdutos.js"></script>
+    <script src="verificarValidade.js"></script>
+    <script src="verificarFiltro.js"></script>
+    <script src="editarProdutos.js"></script>
+    <script src="ordenarProdutos.js"></script>
+    <script src="mostrarLogin.js"></script>
+    <script src="logoutUser.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        verificarValidade();
+        });
+    </script>
+
+<!-- Modal para editar produto -->
+<div id="editProductModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Editar Produto</h2>
+        <form id="editProductForm">
+            <label for="codigo">Código:</label>
+            <input type="number" id="codigo" name="codigo" required>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="validade">Validade (YYYY-MM-DD):</label>
+            <input type="date" id="validade" name="validade" required>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+            <label for="loja">Loja:</label>
+            <select id="loja" name="loja" required>
+                <option value="Loja 1">Loja 1</option>
+                <option value="Loja 2">Loja 2</option>
+                <option value="Loja 3">Loja 3</option>
+            </select>
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelEdit">Cancelar</button> <!-- Botão de Cancelar -->
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
