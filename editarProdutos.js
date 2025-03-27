@@ -36,6 +36,8 @@ function editarProduto(id) {
                     console.log("Produto atualizado com sucesso.");
                     exibirProdutos(); // Atualiza a lista de produtos
                     modal.style.display = "none"; // Fecha o modal após salvar
+                    // Chama a função para verificar validade após criar o produto
+        verificarValidade();
                 });
             };
 
