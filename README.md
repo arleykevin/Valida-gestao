@@ -1,4 +1,4 @@
-# Gestao-validades
+# ValidaGestão
 
 ## Descrição
 ValidaGestão é uma aplicação web que permite a pequenos e médios comerciantes, estoquistas, supermercados e farmácias monitorar a validade de produtos, alertando sobre vencimentos próximos e ajudando a evitar perdas.
@@ -21,3 +21,13 @@ Para verificar o codigo acesse a pagina no github: https://github.com/arleykevin
 
 ## Utilização
 Para utilizar o projeto, basta acessar o site:  https://gestao-validades.vercel.app/
+
+##Autores
+Este projeto foi desenvolvido por alunos da UNIFOR - Universidade de Fortaleza, localizada em Fortaleza, Ceará.
+
+Nome do Aluno 1 - Matrícula: 123456
+Nome do Aluno 2 - Matrícula: 123457
+Nome do Aluno 3 - Matrícula: 123458
+Nome do Aluno 4 - Matrícula: 123459
+Nome do Aluno 5 - Matrícula: 123460
+Nome do Aluno 6 - Matrícula: 123461
