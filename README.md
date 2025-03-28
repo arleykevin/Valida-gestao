@@ -29,6 +29,6 @@ Arley Kevin Teixeira Rabelo - 2326223
 Gabriella Castro de Moura Moreira - 2326182
 Vytorya Daysy Oliveira Pedrosa - 2326315
 Maria joiciellen Simao dos Santos - 2326186
-Nome do Aluno 4 - Matrícula: 123459
+Talles de Lima Pereira - 2326201
 Nome do Aluno 5 - Matrícula: 123460
 Nome do Aluno 6 - Matrícula: 123461
