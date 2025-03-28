@@ -25,7 +25,8 @@ Para utilizar o projeto, basta acessar o site:  https://gestao-validades.vercel.
 ## Autores
 Este projeto foi desenvolvido por alunos da UNIFOR - Universidade de Fortaleza, localizada em Fortaleza, Ceará.
 
-Nome do Aluno 1 - Matrícula: 123456
+Arley Kevin Teixeira Rabelo - 2326223
+Gabriella Castro de Moura Moreira - 2326182
 Nome do Aluno 2 - Matrícula: 123457
 Nome do Aluno 3 - Matrícula: 123458
 Nome do Aluno 4 - Matrícula: 123459
