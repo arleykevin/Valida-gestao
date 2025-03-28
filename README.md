@@ -22,7 +22,7 @@ Para verificar o codigo acesse a pagina no github: https://github.com/arleykevin
 ## Utilização
 Para utilizar o projeto, basta acessar o site:  https://gestao-validades.vercel.app/
 
-##Autores
+## Autores
 Este projeto foi desenvolvido por alunos da UNIFOR - Universidade de Fortaleza, localizada em Fortaleza, Ceará.
 
 Nome do Aluno 1 - Matrícula: 123456
