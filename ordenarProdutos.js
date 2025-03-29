@@ -33,7 +33,3 @@ function ordenarProdutos(criterio) {
     });
 
 }
-// Adiciona o evento de mudança ao menu de seleção
-//document.getElementById('sortSelect').addEventListener('change', (event) => {
- //   ordenarProdutos(event.target.value);
-//});
