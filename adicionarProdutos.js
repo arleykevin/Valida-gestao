@@ -18,14 +18,14 @@ function adicionarProduto() {
         produto.save()
             .then((produto) => {
                 console.log("Produto salvo com sucesso: ", produto);
-                exibirProdutos(); // Atualiza a lista de produtos
-                // Limpa os campos
+                exibirProdutos();
+                
                 document.getElementById("produtoCodigo").value = "";
                 document.getElementById("produtoNome").value = "";
                 document.getElementById("produtoValidade").value = "";
                 document.getElementById("produtoQuantidade").value = "";
-                document.getElementById("produtoLoja").value = ""; // Limpa a seleção da loja
-                verificarValidade(); // Verifica validade após adicionar o produto
+                document.getElementById("produtoLoja").value = "";
+                verificarValidade();
             })
             .catch((error) => {
                 console.error("Erro ao salvar o produto: ", error);

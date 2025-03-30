@@ -1,23 +1,22 @@
 function exibirProdutos() {
     
     const lista = document.getElementById("listaProdutos");
-    lista.innerHTML = ""; // Limpa a tabela antes de exibir os produtos
+    lista.innerHTML = "";
 
-    const query = new Parse.Query("Produto"); // Cria uma nova consulta para a classe Produto
-    query.find() // Busca todos os produtos
+    const query = new Parse.Query("Produto");
+    query.find()
         .then((resultados) => {
-            produtos = resultados; // Armazena os produtos na variável global
-            const hoje = new Date(); // Obtém a data atual
+            produtos = resultados;l
+            const hoje = new Date();
 
-            // Ordena os produtos pela data de validade
             resultados.sort((a, b) => {
                 const dataValidadeA = a.get("dataDeValidade");
                 const dataValidadeB = b.get("dataDeValidade");
-                return dataValidadeA - dataValidadeB; // Ordena em ordem crescente
+                return dataValidadeA - dataValidadeB;
             });
 
             resultados.forEach(produto => {
-                const dataValidade = produto.get("dataDeValidade"); // Obtém a data de validade
+                const dataValidade = produto.get("dataDeValidade");
                 const diasRestantes = Math.ceil((dataValidade - hoje) / (1000 * 60 * 60 * 24));
                 
                 // Formata a data de validade para o formato desejado
