@@ -6,7 +6,7 @@ function exibirProdutos() {
     const query = new Parse.Query("Produto");
     query.find()
         .then((resultados) => {
-            produtos = resultados;l
+            produtos = resultados;
             const hoje = new Date();
 
             resultados.sort((a, b) => {
